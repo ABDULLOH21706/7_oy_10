@@ -17,6 +17,7 @@ import malumot3_img from "../assets/malumot3.svg";
 import malumot4_img from "../assets/malumot4.svg";
 import malumot5_img from "../assets/malumot5.svg";
 import malumot6_img from "../assets/malumot6.svg";
+import section3_background from "../assets/section3_background.svg";
 
 const CardList = () => {
   const [activeId, setActiveId] = useState(null);
@@ -419,8 +420,18 @@ function Main() {
             </div>
           </div>
         </section>
-        <section className="">
-
+        <section className="flex items-center justify-center w-[100%] pl-[343px] pr-[343px] pt-[106px] pb-[100px]">
+          <div
+            className="w-[100%] pl-[200px] pr-[200px] pt-[54px] pb-[54px] bg-cover bg-center rounded-[16px]"
+            style={{ backgroundImage: `url(${section3_background})` }}
+          >
+            <div className="flex items-center justify-center w-[100%]">
+              <p className="text-white text-[40px] text-center font-[600]">
+                Мы продумали всё, чтобы вы могли купить металлопрокат по
+                выгодной цене и с доставкой за 2-3 дня
+              </p>
+            </div>
+          </div>
         </section>
       </main>
     </div>
